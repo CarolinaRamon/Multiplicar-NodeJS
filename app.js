@@ -1,36 +1,59 @@
 
-//PAQUETE YARGS
+//EJECUTAR EL COMANDO LISTAR
 
-//Este es un paquete:
+
 const argv = require('yargs')
             .command('listar', 'Imprime en consola la tabla de multiplicar', {
-              base: {//comando que el usuario puede escribir
-                  demand: true, //valor obligatorio
-                  alias: 'b' //Esto es para los shorcuts, en lugar de --base ingresa -b
+              base: {
+                  demand: true, 
+                  alias: 'b'
               },
               limite: {
                 alias: 'l',
-                default: 10//En caso que el usuario no ingrese ningún límite.
+                default: 10
               }
-            })//El segundo argumento es una ayuda para mostrar al usuario. El tercer argumento es un objeto que va a recibir la configuración de parámetros o de slash (--, -) que este comando puede recibir
-            .help()//Imprime una ayuda con el comando --help (node app listar --help o node app --help). Esto lo crea yargs.
+            })
+            .command('crear', 'Genera un archivo con la tabla de multiplicar', {
+              base: {
+                  demand: true, 
+                  alias: 'b'
+              },
+              limite: {
+                alias: 'l',
+                default: 10
+              }
+            })
+            .help()
             .argv;
 
-//Ingresar por consola: node app listar --base para ver la base
+//Para listar, ingresar por consola: node app listar --limite 30 --base 6, por ejemplo
+//Para crear, ingresar por consola: node app crear --limite 5 --base , por ejemplo
 
-const {crearArchivo} = require('./multiplicar/multiplicar.js')
-//Este es un path relativo por eso tiene ./ etc.
+const {crearArchivo, listarTabla} = require('./multiplicar/multiplicar.js')
 
+let comando = argv._[0];//_ hace referencia al arreglo
 
-let argv2 = process.argv;
-console.log(argv.base);
-console.log('Limite', argv.limite);
-//console.log(argv2);
+switch (comando){
+
+  case 'listar': 
+        //console.log('Listar');
+        listarTabla(argv.base, argv.limite);
+        break;
+
+  case 'crear': 
+        //console.log('Crear');
+        crearArchivo(argv.base, argv.limite)
+        .then(archivo => console.log(`Archivo creado ${archivo}`))
+        .catch(e => console.log(e));
+        break;
+
+  default:
+    console.log('Comando no reconocido.');
+
+}
+
 // let parametro = argv[2];
 // let base = parametro.split('=')[1]
 
-// crearArchivo(base)
-//   .then(archivo => console.log(`Archivo creado ${archivo}`))
-//   .catch(e => console.log(e));
 
   
