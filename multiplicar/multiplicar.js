@@ -1,9 +1,14 @@
 
 
 const fs = require('fs');
+const colors = require('colors');//Tengo que hacer los requires por cada archivo en donde yo necesite esa librería
 
-//Igual gracias a Yargs siempre vamos a recibir un valor por defecto del límite. Es un poco redundante ponerle un valor por defecto al límite acá, pero bueno...
 let listarTabla = (base, limite = 10) => {
+
+
+    console.log('======================================='.green);
+    console.log(`=========== ${base}=================`.yellow);
+    console.log('======================================='.green);
 
     for (let i=0; i<=limite; i++){
         console.log(`${base} * ${i} = ${base * i}\n`); 
