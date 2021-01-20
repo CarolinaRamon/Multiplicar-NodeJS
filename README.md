@@ -3,10 +3,12 @@
 
 Esta es una aplicación para generar archivos de tablas de multiplicar:
 
-![Tabla del 7 - hasta el 4](https://raw.githubusercontent.com/CarolinaRamon/multiplicar-node/main/ejemplo-tabla.jpg "Ejemplo de archivo creado")
+![Tabla del 7 - hasta el 4](https://raw.githubusercontent.com/CarolinaRamon/multiplicar-node/main/assets/ejemplo-tabla.jpg "Ejemplo de archivo creado")
 
-Recuerden ejecutar este comando:
+Primero, recuerden ejecutar este comando para instalar los paquetes npm:
 
 ```
 npm install
 ```
+
+![Comando listar en la consola](https://raw.githubusercontent.com/CarolinaRamon/multiplicar-node/main/assets/listar-consola.jpg "Ejemplo de tabla en consola")
