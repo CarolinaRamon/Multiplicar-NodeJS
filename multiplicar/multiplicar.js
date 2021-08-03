@@ -1,13 +1,13 @@
 
 
 const fs = require('fs');
-const colors = require('colors');//Tengo que hacer los requires por cada archivo en donde yo necesite esa librería
+const colors = require('colors');//Tengo que hacer los requires en cada archivo en donde necesite un paquete
 
 let listarTabla = (base, limite = 10) => {
 
 
     console.log('======================================='.green);
-    console.log(`=========== ${base}=================`.yellow);
+    console.log(`=========== ${base} ===================`.yellow);
     console.log('======================================='.green);
 
     for (let i=0; i<=limite; i++){

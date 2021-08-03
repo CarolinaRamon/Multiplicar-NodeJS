@@ -1,7 +1,7 @@
 {
-  "name": "03-bases-node",
+  "name": "multiplicar-node",
   "version": "1.0.0",
-  "description": "Esta es una aplicación de línea de comando.",
+  "description": "Esta es una aplicación de línea de comando para crear tablas de multiplicar en archivos .txt",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -1,4 +1,5 @@
 
+//Configuración de yargs:
 
 const opts = {
     base: {
