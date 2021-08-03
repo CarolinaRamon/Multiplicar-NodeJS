@@ -1,7 +1,7 @@
 
 ## Multiplicar Console App
 
-Esta es una aplicación para listar por consola tablas de multiplicar y también generar sus respectivos archivos .txt
+Esta es una aplicación para generar archivos .txt con tablas de multiplicar y también listarlas por consola si se desea.
 
 Una vez que lo descarguen, recuerden ejecutar el siguiente comando para instalar los paquetes npm necesarios para  para que la app funcione correctamente:
 
