@@ -12,7 +12,7 @@ npm install
 Para crear los archivos .txt de las tablas, ingresar por consola, por ejemplo: 
 
 ```
-node app --base 8 --hasta 5 
+node app --base 2 --hasta 8 
 ```
 La base es el número a multiplicar y el comando "hasta" (opcional, default=10) indica justamente hasta qué número queremos que nos genere la tabla.
 
@@ -45,6 +45,6 @@ Options:
 - colors
 
 ## Otras características de la Aplicación:
-- Se valida que el argumento base ingresado sea un número. 
+- Se valida que el argumento "base" ingresado sea un número. 
 - Colores en consola.
 
