@@ -1,33 +1,16 @@
 
-//COLORES DE LA CONSOLA
+const { crearArchivo } = require('./helpers/multiplicar');
+const argv = require('./config/yargs');
+
+require('colors');
+
+console.clear();
 
 
-const argv = require('./config/yargs').argv;
-const colors = require('colors');
-// const colors = require('colors/safe');//Otra posibilidad.
-
-const { crearArchivo, listarTabla } = require('./multiplicar/multiplicar.js')
-
-let comando = argv._[0];
-
-switch (comando) {
-
-  case 'listar':
-    listarTabla(argv.base, argv.limite);
-    break;
-
-  case 'crear':
-
-    crearArchivo(argv.base, argv.limite)
-      .then(archivo => console.log(`Archivo creado ${archivo.magenta}`))
-      //   .then(archivo => console.log(`Archivo creado`, colors.magenta(archivo)))//Otra posibilidad
-      .catch(e => console.log(e));
-    break;
-
-  default:
-    console.log('Comando no reconocido.');
-
-}
+crearArchivo(argv.base, argv.listar, argv.hasta)
+      .then(nombreArchivo => console.log(nombreArchivo.brightMagenta))
+      .catch( err => console.log(err) );
 
 
-
+  
+ 
