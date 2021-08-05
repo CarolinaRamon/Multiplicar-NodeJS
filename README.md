@@ -23,6 +23,7 @@ Para crear los archivos y, además, listar las tablas en consola, se debe agrega
 ```
 node app --base 8 --hasta 15 --listar
 ```
+
 ![Comando listar en la consola](https://raw.githubusercontent.com/CarolinaRamon/multiplicar-node/main/assets/ejemplo-consola.png "Ejemplo de tabla en consola")
 
 También podemos ver el menú ingresando:
@@ -47,4 +48,9 @@ Options:
 ## Otras características de la Aplicación:
 - Se valida que el argumento "base" ingresado sea un número. 
 - Colores en consola.
+- Alias de comandos:
+
+```
+node app --b 8 --h 15 --l
+```
 
