@@ -3,12 +3,6 @@
 
 Esta es una aplicación para generar archivos .txt con tablas de multiplicar y también listarlas por consola.
 
-Una vez que lo descarguen, recuerden ejecutar el siguiente comando para instalar los paquetes npm necesarios para que la app funcione correctamente:
-
-```
-npm install
-```
-
 Para crear los archivos .txt de las tablas, ingresar por consola, por ejemplo: 
 
 ```
@@ -54,3 +48,8 @@ Options:
 node app --b 8 --h 15 --l
 ```
 
+📦 Paquete npm YARGS 
+
+Este popular paquete (suele tener unas 50 millones de descargas por semana) nos permite manipular fácilmente los argumentos ingresados por línea de comandos. Podemos configurar opciones para los comandos como alias, tipos, descripción, etc. de manera muy sencilla. También nos genera automáticamente un menú de ayuda, entre otras funcionalidades.
+
+DATO CURIOSO: La temática de este paquete son los piratas. Aparentemente, “Yargs” es el gruñido que haría un pirata. Y su logo, eslogan y ejemplos están orientados a esta temática. 
