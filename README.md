@@ -48,8 +48,13 @@ Options:
 node app --b 8 --h 15 --l
 ```
 
-📦 Paquete npm YARGS 
+## 📦 Paquete npm YARGS 
 
 Este popular paquete (suele tener unas 50 millones de descargas por semana) nos permite manipular fácilmente los argumentos ingresados por línea de comandos. Podemos configurar opciones para los comandos como alias, tipos, descripción, etc. de manera muy sencilla. También nos genera automáticamente un menú de ayuda, entre otras funcionalidades.
 
-DATO CURIOSO: La temática de este paquete son los piratas. Aparentemente, “Yargs” es el gruñido que haría un pirata. Y su logo, eslogan y ejemplos están orientados a esta temática. 
+DATO CURIOSO: La temática de este paquete son los piratas. Aparentemente, “Yargs” es el gruñido que haría un pirata. Y su logo, eslogan y ejemplos están orientados a esta temática.
+   
+
+## 📦 Paquete npm COLORS 
+
+Este paquete npm permite agregar estilos a la consola de comandos. Podemos agregar colores (opacos o brillantes) tanto al texto como a su fondo, también negritas, subrayados y algunos estilos extra como zebra, rainbow y trap, entre otros. 
