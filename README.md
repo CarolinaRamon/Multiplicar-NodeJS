@@ -58,3 +58,5 @@ DATO CURIOSO: La temática de este paquete son los piratas. Aparentemente, “Ya
 ## 📦 Paquete npm COLORS 
 
 Este paquete npm permite agregar estilos a la consola de comandos. Podemos agregar colores (opacos o brillantes) tanto al texto como a su fondo, también negritas, subrayados y algunos estilos extra como zebra, rainbow y trap, entre otros. 
+
+Carolina - 2021
